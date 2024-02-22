@@ -16,7 +16,7 @@ const promptUser = () => {
   inquirer
     .prompt([...questions])
     .then((answers) => {
-      writeToFile('SAMPLE_README.md', generateMarkdown(answers));
+      writeToFile('A_SAMPLE_README.md', generateMarkdown(answers));
     })
     .catch((err) => {
       if (err.isTtyError) {
