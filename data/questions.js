@@ -57,6 +57,40 @@ const questions = [
     type: 'input',
     message: 'Please provide any test information for your project:',
     name: 'test',
+    validate: (answer) => {
+      if (answer.trim().length === 0) {
+        return 'N/A';
+      }
+      return true;
+    },
+  },
+  {
+    type: 'list',
+    message: 'Please select a license that suits your project:',
+    choices: ['GUN GPL-3.0', 'Apache License 2.0', 'No license', 'MIT License'],
+    name: 'license',
+  },
+  {
+    type: 'input',
+    message: 'Please provide your GitHub username:',
+    name: 'username',
+    filter: (answer) => {
+      if (answer.trim().length === 0) {
+        return 'Your GitHub username may not be blank';
+      }
+      return true;
+    },
+  },
+  {
+    type: 'input',
+    message: 'Please provide your email address:',
+    name: 'email',
+    filter: (answer) => {
+      if (answer.trim().length === 0) {
+        return 'N/A';
+      }
+      return true;
+    },
   },
 ];
 
