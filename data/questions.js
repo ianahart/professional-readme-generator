@@ -22,6 +22,28 @@ const questions = [
       return true;
     },
   },
+  {
+    type: 'input',
+    message: 'Please provide the necesary installation instructions:',
+    name: 'installation',
+    validate: (answer) => {
+      if (answer.trim().length === 0) {
+        return 'Please enter installation instructions';
+      }
+      return true;
+    },
+  },
+  {
+    type: 'input',
+    message: 'Plase provide usage information:',
+    name: 'usage',
+    validate: (answer) => {
+      if (answer.trim().length === 0) {
+        return 'Please enter usage information';
+      }
+      return true;
+    },
+  },
 ];
 
 module.exports = {
