@@ -3,7 +3,12 @@ const questions = [
     type: 'input',
     message: 'Please enter your project title',
     name: 'title',
-    filter: (answer) => answer.slice(0, 1).toUpperCase() + answer.slice(1).toLowerCase(),
+    filter: (answer) => {
+      return answer
+        .split(' ')
+        .map((part) => part.slice(0, 1).toUpperCase() + part.slice(1).toLowerCase())
+        .join(' ');
+    },
     validate: (answer) => {
       if (answer.trim().length === 0) {
         return 'Please enter a valid title';
@@ -74,7 +79,7 @@ const questions = [
     type: 'input',
     message: 'Please provide your GitHub username:',
     name: 'username',
-    filter: (answer) => {
+    validate: (answer) => {
       if (answer.trim().length === 0) {
         return 'Your GitHub username may not be blank';
       }
@@ -85,9 +90,26 @@ const questions = [
     type: 'input',
     message: 'Please provide your email address:',
     name: 'email',
-    filter: (answer) => {
+    validate: (answer) => {
       if (answer.trim().length === 0) {
         return 'N/A';
+      }
+      return true;
+    },
+  },
+  {
+    type: 'input',
+    message: 'Please provide your full name for the license',
+    name: 'fullName',
+    filter: (answer) => {
+      return answer
+        .split(' ')
+        .map((part) => part.slice(0, 1).toUpperCase() + part.slice(1).toLowerCase())
+        .join(' ');
+    },
+    validate: (answer) => {
+      if (answer.trim().length === 0) {
+        return 'The full name for the license may not be blank';
       }
       return true;
     },
