@@ -29,7 +29,7 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Please provide the necesary installation instructions:',
+    message: 'Please provide the necessary installation instructions:',
     name: 'installation',
     validate: (answer) => {
       if (answer.trim().length === 0) {
@@ -62,17 +62,12 @@ const questions = [
     type: 'input',
     message: 'Please provide any test information for your project:',
     name: 'test',
-    validate: (answer) => {
-      if (answer.trim().length === 0) {
-        return 'N/A';
-      }
-      return true;
-    },
+    filter: (answer) => (answer.trim().length === 0 ? 'N/A' : answer),
   },
   {
     type: 'list',
     message: 'Please select a license that suits your project:',
-    choices: ['GUN GPL-3.0', 'Apache License 2.0', 'No license', 'MIT License'],
+    choices: ['GNU GPL-3.0', 'Apache License 2.0', 'No License', 'MIT License'],
     name: 'license',
   },
   {
