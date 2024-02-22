@@ -11,7 +11,7 @@ const promptUser = () => {
   inquirer
     .prompt([...questions])
     .then((answers) => {
-      console.log(answers);
+      generateMarkdown(answers);
     })
     .catch((err) => {
       if (err.isTtyError) {
