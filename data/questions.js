@@ -44,6 +44,20 @@ const questions = [
       return true;
     },
   },
+  {
+    type: 'list',
+    message: 'Please select an option for contribution guidelines',
+    choices: [
+      'Please contact the author to be added as a collaborator to this project and to discuss contribution guidelines.',
+      'There are no contributions being accepted at this time.',
+    ],
+    name: 'contribution',
+  },
+  {
+    type: 'input',
+    message: 'Please provide any test information for your project:',
+    name: 'test',
+  },
 ];
 
 module.exports = {

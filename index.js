@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
-const { questions } = require('./data/questions');
+const generateMarkdown = require('./utils/generateMarkdown.js');
+const { questions } = require('./data/questions.js');
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
@@ -13,11 +14,10 @@ const promptUser = () => {
       console.log(answers);
     })
     .catch((err) => {
-      console.log(err);
       if (err.isTtyError) {
         console.log('Prompt couldn\t be rendered in the current environment');
       } else {
-        console.log('Something went wrong');
+        console.log('Something went wrong', err);
       }
     });
 };
