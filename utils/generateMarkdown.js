@@ -31,47 +31,48 @@ const renderLicenseSection = (license, fullName) => {
   switch (license) {
     case 'GNU GPL-3.0':
       link = `
-        This application is covered under the ${license}
+  This application is covered under the ${license}
 
-        <details>
-            <summary>
-               Preamble
-            </summary>
-          Copyright (c) ${new Date().getFullYear()} ${fullName}
-          \`\`\`
-          ${GNULicense}
-          \`\`\`
-        </details>
-      `;
+  <details>
+      <summary>
+          Preamble
+      </summary>
+    Copyright (c) ${new Date().getFullYear()} ${fullName}
+
+    ${GNULicense}
+
+  </details>
+`;
       break;
     case 'Apache License 2.0':
       link = `
-        This application is covered under the ${license}
+  This application is covered under the ${license}
 
-        <details>
-            <summary>
-               Preamble
-            </summary>
-          \`\`\`
-          ${apacheLicense}
-          \`\`\`
-        </details>
-      `;
+  <details>
+      <summary>
+          Preamble
+      </summary>
+
+    ${apacheLicense}
+
+  </details>
+`;
       break;
     case 'MIT License':
       link = `
-        This application is covered under the ${license}
+This application is covered under ${license}
 
-        <details>
-            <summary>
-               Preamble
-            </summary>
-          \`\`\`
-          Copyright (c) ${new Date().getFullYear()} ${fullName}
-          ${MITLicense}
-          \`\`\`
-        </details>
-      `;
+<details>
+  <summary>
+    Preamble
+  </summary>
+
+Copyright (c) ${new Date().getFullYear()} ${fullName}
+
+${MITLicense}
+
+</details>
+`;
       break;
     case 'No License':
       link = '';
