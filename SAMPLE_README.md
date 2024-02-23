@@ -19,7 +19,7 @@
 
 
   ## Usage
-  Navigate to the root of the project and run node index.js. Answer the following questions to have a professional readme generated for you.
+  Navigate to the root of the project and run node index.js Answer the following questions to have a professional readme generated for you.
 
   ## License
   
@@ -62,7 +62,7 @@ SOFTWARE.
   ## Tests
   To run tests, run these command(s):
 
-  > ```npm run test```
+  > ```npm run  test```
 
   ## Questions
   * You can reach me through email at ian@example.com
