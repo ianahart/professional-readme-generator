@@ -7,9 +7,7 @@
 - Node.js
 - Inquirer (NPM package)
 
-
 <img width="600" alt="readme-generator-screenshot" src="https://github.com/ianahart/professional-readme-generator/assets/29121238/bd97b690-7e2a-422c-a2a5-161c9d17ccf3">
-
 
 ## Description
 
@@ -99,7 +97,7 @@ No contributions are being accepted at this time.
 
 ## Badges
 
-[![GitHub license](https://img.shields.io/github/license/ianhart/profressional-readme-generator)](https://github.com/ianahart/profressional-readme-generator/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/ianhart/professional-readme-generator)](https://github.com/ianahart/professional-readme-generator/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/ianahart/professional-readme-generator)](https://github.com/ianhart/professional-readme-generator/issues)
 [![GitHub stars](https://img.shields.io/github/stars/ianahart/professional-readme-generator)](https://github.com/ianahart/professional-readme-generator/stargazers)
 
