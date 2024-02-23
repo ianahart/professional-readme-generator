@@ -97,7 +97,7 @@ No contributions are being accepted at this time.
 
 ## Badges
 
-[![GitHub license](https://img.shields.io/github/license/ianhart/professional-readme-generator)](https://github.com/ianahart/professional-readme-generator/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/ianahart/professional-readme-generator)](https://github.com/ianahart/professional-readme-generator/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/ianahart/professional-readme-generator)](https://github.com/ianhart/professional-readme-generator/issues)
 [![GitHub stars](https://img.shields.io/github/stars/ianahart/professional-readme-generator)](https://github.com/ianahart/professional-readme-generator/stargazers)
 
