@@ -1,7 +1,6 @@
 const { GNULicense, MITLicense, apacheLicense } = require('../data/licenses.js');
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// render the license badge
 const renderLicenseBadge = (license) => {
   let selectedLicense;
   switch (license) {
@@ -17,7 +16,7 @@ const renderLicenseBadge = (license) => {
       selectedLicense =
         '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
       break;
-    case 'No License':
+    case 'None':
       selectedLicense = '';
   }
 
@@ -25,13 +24,14 @@ const renderLicenseBadge = (license) => {
 };
 
 // TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+
+// render the license section in the read me
 const renderLicenseSection = (license, fullName) => {
   let link;
   switch (license) {
     case 'GNU GPL-3.0':
       link = `
-  This application is covered under the ${license}
+  This project is covered under the ${license}
 
   <details>
       <summary>
@@ -46,7 +46,7 @@ const renderLicenseSection = (license, fullName) => {
       break;
     case 'Apache License 2.0':
       link = `
-  This application is covered under the ${license}
+  This project is covered under the ${license}
 
   <details>
       <summary>
@@ -60,7 +60,7 @@ const renderLicenseSection = (license, fullName) => {
       break;
     case 'MIT License':
       link = `
-This application is covered under ${license}
+This project is covered under ${license}
 
 <details>
   <summary>
@@ -74,23 +74,30 @@ ${MITLicense}
 </details>
 `;
       break;
-    case 'No License':
+    case 'None':
       link = '';
       break;
   }
   return link;
 };
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// render license link in the table of contents
 const renderLicenseLink = (license) => {
-  return license === 'No License' ? '' : `* [License](#license)`;
+  return license === 'None' ? '' : `* [License](#license)`;
 };
 
-// TODO: Create a function to generate markdown for README
-const generateMarkdown = (data) => {
-  const { title, description, installation, usage, contribution, test, license, username, email, fullName } = data;
-
-  console.log(renderLicenseLink(license));
+// generate the markdown for the readme
+const generateMarkdown = ({
+  title,
+  description,
+  installation,
+  usage,
+  contribution,
+  test,
+  license,
+  username,
+  email,
+  fullName,
+}) => {
   return `# ${title}
 
   ${renderLicenseBadge(license)}
@@ -107,7 +114,9 @@ const generateMarkdown = (data) => {
   * [Questions](#questions)
 
   ## Installation
-  ${installation}
+  To install the necessary dependencies, run these commands(s):
+  > \`\`\`${installation}\`\`\`
+
 
   ## Usage
   ${usage}
@@ -119,7 +128,9 @@ const generateMarkdown = (data) => {
   ${contribution}
 
   ## Tests
-  ${test}
+  To run tests, run these command(s):
+
+  > \`\`\`${test}\`\`\`
 
   ## Questions
   * You can reach me through email at ${email}

@@ -18,7 +18,7 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Please describe your project in a few sentences.',
+    message: 'Please provide a brief description of your project:',
     name: 'description',
     validate: (answer) => {
       if (answer.trim().length === 0) {
@@ -29,14 +29,9 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Please provide the necessary installation instructions:',
+    message: 'Any dependencies to install? (npm i)',
     name: 'installation',
-    validate: (answer) => {
-      if (answer.trim().length === 0) {
-        return 'Please enter installation instructions';
-      }
-      return true;
-    },
+    filter: (answer) => (answer.length > 0 ? answer.trim() : 'N/A'),
   },
   {
     type: 'input',
@@ -53,21 +48,21 @@ const questions = [
     type: 'list',
     message: 'Please select an option for contribution guidelines',
     choices: [
-      'Please contact the author to be added as a collaborator to this project and to discuss contribution guidelines.',
+      'Please get in touch with the author to be added as a collaborator to this project and to discuss contribution guidelines.',
       'There are no contributions being accepted at this time.',
     ],
     name: 'contribution',
   },
   {
     type: 'input',
-    message: 'Please provide any test information for your project:',
+    message: 'What command should be run to run tests?',
     name: 'test',
     filter: (answer) => (answer.trim().length === 0 ? 'N/A' : answer),
   },
   {
     type: 'list',
     message: 'Please select a license that suits your project:',
-    choices: ['GNU GPL-3.0', 'Apache License 2.0', 'No License', 'MIT License'],
+    choices: ['GNU GPL-3.0', 'Apache License 2.0', 'None', 'MIT License'],
     name: 'license',
   },
   {
