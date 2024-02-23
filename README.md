@@ -7,6 +7,10 @@
 - Node.js
 - Inquirer (NPM package)
 
+
+<img width="600" alt="readme-generator-screenshot" src="https://github.com/ianahart/professional-readme-generator/assets/29121238/bd97b690-7e2a-422c-a2a5-161c9d17ccf3">
+
+
 ## Description
 
 This application is a CLI tool that help's the user generate a professional README.md file. The project utilizes `Node.js` and the `Inquirer` NPM package. The inquirer package provides a collection of common interactive command line user interfaces. It will prompt the user and save the user input for a later point time that is accessible.
