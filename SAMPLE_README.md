@@ -3,7 +3,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  a Nodejs based client tool that allows the user to create a high-quality README for their repository projects
+  A node.js based cli tool that allows the user to create a high-quality README for their repository projects
 
   ## Table of Contents
   * [Installation](#installation)
@@ -19,7 +19,7 @@
 
 
   ## Usage
-  Navigate to the root of the project and run node index.js. Answer the following questions to have a professional readme generated for you
+  Navigate to the root of the project and run node index.js. Answer the following questions to have a professional readme generated for you.
 
   ## License
   
@@ -65,5 +65,5 @@ SOFTWARE.
   > ```npm run test```
 
   ## Questions
-  * You can reach me through email at ian@gmail.com
+  * You can reach me through email at ian@example.com
   * Here is my GitHub [profile](https://github.com/ianahart)
