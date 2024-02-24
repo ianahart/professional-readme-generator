@@ -18,7 +18,7 @@ This application is a CLI tool that help's the user generate a professional READ
 ## Table of Contents
 
 - [Professional Readme Generator](#professional-readme-generator)
-  - [Built With](#built-with)
+    - [Built With](#built-with)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
@@ -37,8 +37,8 @@ This application is a CLI tool that help's the user generate a professional READ
 
   `git clone https://github.com/ianahart/professional-readme-generator.git`
 
-- **cd** into the root of the cloned project
-- run `npm install` to install necessary dependencies
+- **cd** into the cloned project
+- into the root of the project, run `npm install` to install necessary dependencies
 
 ## Usage
 
