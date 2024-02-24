@@ -11,7 +11,7 @@
 
 ## Description
 
-This application is a CLI tool that help's the user generate a professional README.md file. The project utilizes `Node.js` and the `Inquirer` NPM package. The inquirer package provides a collection of common interactive command line user interfaces. It will prompt the user and save the user input for a later point time that is accessible.
+This application is a CLI tool that help's the user generate a professional README.md file. The project utilizes `Node.js` and the `Inquirer` NPM package. The inquirer package provides a collection of common interactive command line user interfaces. It provides several methods for asking questions and returning answers from the user that can be accessed by a .then promise function.
 
 [Link to the repository](https://github.com/ianahart/professional-readme-generator)
 
@@ -62,7 +62,7 @@ This project is covered under MIT License
 
 <details>
   <summary>
-    License Text
+    Preamble
   </summary>
 
 ```
