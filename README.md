@@ -17,18 +17,16 @@ This application is a CLI tool that help's the user generate a professional READ
 
 ## Table of Contents
 
-- [Professional Readme Generator](#professional-readme-generator)
-    - [Built With](#built-with)
-  - [Description](#description)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
-    - [References](#references)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Badges](#badges)
-  - [Questions](#questions)
+- [Built With](#built-with)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [References](#references)
+- [License](#license)
+- [Contributing](#contributing)
+- [Badges](#badges)
+- [Questions](#questions)
 
 ## Installation
 
@@ -50,7 +48,7 @@ From inside the project's root directory run the command `node index.js`. Answer
 
 N/A
 
-### References
+## References
 
 - https://dev.to/asyraf/how-to-add-dropdown-in-markdown-o78
 - https://github.com/SBoudrias/Inquirer.js/tree/master/packages/inquirer
